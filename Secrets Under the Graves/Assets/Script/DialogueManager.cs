@@ -30,6 +30,8 @@ public class DialogueManager : MonoBehaviour
 
     public void StartDialogue(Dialogue dialogue)
     {
+        _animatorTransition.SetBool("Transition", !_animatorTransition.GetBool("Transition"));
+        _animatorTransition.SetBool("Transition", !_animatorTransition.GetBool("Transition"));
         _animator.SetBool("Box", !_animator.GetBool("Box"));
         _nameText.text = dialogue._name;
         _sentences.Clear();
