@@ -123,7 +123,7 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &106980648
+--- !u!1 &88245351
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -131,63 +131,68 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 106980649}
-  - component: {fileID: 106980653}
-  - component: {fileID: 106980652}
-  - component: {fileID: 106980651}
-  - component: {fileID: 106980650}
+  - component: {fileID: 88245352}
+  - component: {fileID: 88245356}
+  - component: {fileID: 88245355}
+  - component: {fileID: 88245354}
+  - component: {fileID: 88245353}
   m_Layer: 5
-  m_Name: Obtention Os
+  m_Name: Chemin de droite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &106980649
+  m_IsActive: 0
+--- !u!224 &88245352
 RectTransform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 106980648}
+  m_GameObject: {fileID: 88245351}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 3, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 996648050}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 200}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &106980650
+--- !u!114 &88245353
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 106980648}
+  m_GameObject: {fileID: 88245351}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e4a963925bc280046a5480fabad7e518, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _dialogue:
-    _name: 
+    _name: William
     _spriteBackground: {fileID: 0}
-    _firstChoice: {fileID: 0}
-    _secondChoice: {fileID: 0}
-    _thirdChoice: {fileID: 0}
-    _sentences: []
---- !u!114 &106980651
+    _choice:
+    - {fileID: 2144630869}
+    _sentences:
+    - "Je crois que je suis arriv\xE9 dans un coin recul\xE9 du cimeti\xE8re \xE0
+      en voir l\u2019\xE9tat de ce cercueil et de cette crypte il semblerait que
+      l\u2019on soit \xE0 l\u2019une des premi\xE8res parties construites du cimeti\xE8re."
+    - "On peut lire sur ces tombeaux \u201C17\xE8me si\xE8cle\u201D cela pourrait
+      correspondre \xE0 l\u2019\xE9poque de la r\xE9daction de notre carte"
+    - 'Je pense que je devrais les inspecter mais lequel choisir? '
+--- !u!114 &88245354
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 106980648}
+  m_GameObject: {fileID: 88245351}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bba4c1acf59c37342924fcdc6cb396d5, type: 3}
@@ -207,7 +212,7 @@ MonoBehaviour:
   _onClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 106980650}
+      - m_Target: {fileID: 88245353}
         m_TargetAssemblyTypeName: DialogueTrigger, Assembly-CSharp
         m_MethodName: TriggerDialogue
         m_Mode: 1
@@ -225,13 +230,13 @@ MonoBehaviour:
   _onExit:
     m_PersistentCalls:
       m_Calls: []
---- !u!114 &106980652
+--- !u!114 &88245355
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 106980648}
+  m_GameObject: {fileID: 88245351}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
@@ -255,153 +260,13 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!222 &106980653
+--- !u!222 &88245356
 CanvasRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 106980648}
-  m_CullTransparentMesh: 1
---- !u!1 &120921554
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 120921555}
-  - component: {fileID: 120921559}
-  - component: {fileID: 120921558}
-  - component: {fileID: 120921557}
-  - component: {fileID: 120921556}
-  m_Layer: 5
-  m_Name: Chien Os
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &120921555
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 120921554}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 3, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 996648050}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 200}
-  m_SizeDelta: {x: 100, y: 100}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &120921556
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 120921554}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e4a963925bc280046a5480fabad7e518, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _dialogue:
-    _name: 
-    _spriteBackground: {fileID: 0}
-    _firstChoice: {fileID: 0}
-    _secondChoice: {fileID: 0}
-    _thirdChoice: {fileID: 0}
-    _sentences: []
---- !u!114 &120921557
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 120921554}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bba4c1acf59c37342924fcdc6cb396d5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _interactable: 1
-  _interactableImage: 0
-  _interactableSprite: 0
-  _enterSprite: {fileID: 0}
-  _exitSprite: {fileID: 0}
-  _enterColor: {r: 1, g: 1, b: 1, a: 1}
-  _enterColorImage: {r: 0, g: 0, b: 0, a: 0}
-  _exitColor: {r: 1, g: 1, b: 1, a: 1}
-  _exitColorImage: {r: 0, g: 0, b: 0, a: 0}
-  _clickColor: {r: 1, g: 0.995283, b: 0.995283, a: 1}
-  _clickColorImage: {r: 0, g: 0, b: 0, a: 0}
-  _onClick:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 120921556}
-        m_TargetAssemblyTypeName: DialogueTrigger, Assembly-CSharp
-        m_MethodName: TriggerDialogue
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  _onEnter:
-    m_PersistentCalls:
-      m_Calls: []
-  _onExit:
-    m_PersistentCalls:
-      m_Calls: []
---- !u!114 &120921558
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 120921554}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 0}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &120921559
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 120921554}
+  m_GameObject: {fileID: 88245351}
   m_CullTransparentMesh: 1
 --- !u!1 &126314807
 GameObject:
@@ -421,7 +286,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &126314808
 RectTransform:
   m_ObjectHideFlags: 0
@@ -436,10 +301,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 996648050}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 1920, y: 1080}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!95 &126314809
 Animator:
@@ -500,146 +365,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 126314807}
   m_CullTransparentMesh: 1
---- !u!1 &132256553
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 132256554}
-  - component: {fileID: 132256558}
-  - component: {fileID: 132256557}
-  - component: {fileID: 132256556}
-  - component: {fileID: 132256555}
-  m_Layer: 5
-  m_Name: GardeChasse Mort
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &132256554
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 132256553}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 3, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 996648050}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 200}
-  m_SizeDelta: {x: 100, y: 100}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &132256555
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 132256553}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e4a963925bc280046a5480fabad7e518, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _dialogue:
-    _name: 
-    _spriteBackground: {fileID: 0}
-    _firstChoice: {fileID: 0}
-    _secondChoice: {fileID: 0}
-    _thirdChoice: {fileID: 0}
-    _sentences: []
---- !u!114 &132256556
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 132256553}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bba4c1acf59c37342924fcdc6cb396d5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _interactable: 1
-  _interactableImage: 0
-  _interactableSprite: 0
-  _enterSprite: {fileID: 0}
-  _exitSprite: {fileID: 0}
-  _enterColor: {r: 1, g: 1, b: 1, a: 1}
-  _enterColorImage: {r: 0, g: 0, b: 0, a: 0}
-  _exitColor: {r: 1, g: 1, b: 1, a: 1}
-  _exitColorImage: {r: 0, g: 0, b: 0, a: 0}
-  _clickColor: {r: 1, g: 0.995283, b: 0.995283, a: 1}
-  _clickColorImage: {r: 0, g: 0, b: 0, a: 0}
-  _onClick:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 132256555}
-        m_TargetAssemblyTypeName: DialogueTrigger, Assembly-CSharp
-        m_MethodName: TriggerDialogue
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  _onEnter:
-    m_PersistentCalls:
-      m_Calls: []
-  _onExit:
-    m_PersistentCalls:
-      m_Calls: []
---- !u!114 &132256557
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 132256553}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 0}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &132256558
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 132256553}
-  m_CullTransparentMesh: 1
 --- !u!1 &156565398
 GameObject:
   m_ObjectHideFlags: 0
@@ -654,12 +379,12 @@ GameObject:
   - component: {fileID: 156565401}
   - component: {fileID: 156565400}
   m_Layer: 5
-  m_Name: "Visite Cimeti\xE8re"
+  m_Name: "Entr\xE9e Cimeti\xE8re"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &156565399
 RectTransform:
   m_ObjectHideFlags: 0
@@ -670,13 +395,13 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 3, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 996648050}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 200}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &156565400
@@ -692,12 +417,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _dialogue:
-    _name: 
+    _name: William
     _spriteBackground: {fileID: 0}
-    _firstChoice: {fileID: 0}
-    _secondChoice: {fileID: 0}
-    _thirdChoice: {fileID: 0}
-    _sentences: []
+    _choice:
+    - {fileID: 1311791207}
+    _sentences:
+    - "Suis-je arriv\xE9 au cimeti\xE8re dont parle la carte ?\r\n"
+    - "Aucun doute possible au vu de l\u2019\xE9tat des lieux, c'est bel et bien
+      le cimeti\xE8re de Sighi\u0219oara indiqu\xE9 au dessous du papier."
+    - "Il semblerait qu\u2019\xE0 c\xF4t\xE9 de ce grand portail en fer il y ait
+      une niche, devrais-je l'inspecter ou entrer dans le cimeti\xE8re?"
 --- !u!114 &156565401
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -882,286 +611,6 @@ RectTransform:
   m_AnchoredPosition: {x: 960, y: 540}
   m_SizeDelta: {x: 1920, y: 1080}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!1 &246819324
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 246819325}
-  - component: {fileID: 246819329}
-  - component: {fileID: 246819328}
-  - component: {fileID: 246819327}
-  - component: {fileID: 246819326}
-  m_Layer: 5
-  m_Name: Mort de Dracula
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &246819325
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 246819324}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 3, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 996648050}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 200}
-  m_SizeDelta: {x: 100, y: 100}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &246819326
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 246819324}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e4a963925bc280046a5480fabad7e518, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _dialogue:
-    _name: 
-    _spriteBackground: {fileID: 0}
-    _firstChoice: {fileID: 0}
-    _secondChoice: {fileID: 0}
-    _thirdChoice: {fileID: 0}
-    _sentences: []
---- !u!114 &246819327
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 246819324}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bba4c1acf59c37342924fcdc6cb396d5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _interactable: 1
-  _interactableImage: 0
-  _interactableSprite: 0
-  _enterSprite: {fileID: 0}
-  _exitSprite: {fileID: 0}
-  _enterColor: {r: 1, g: 1, b: 1, a: 1}
-  _enterColorImage: {r: 0, g: 0, b: 0, a: 0}
-  _exitColor: {r: 1, g: 1, b: 1, a: 1}
-  _exitColorImage: {r: 0, g: 0, b: 0, a: 0}
-  _clickColor: {r: 1, g: 0.995283, b: 0.995283, a: 1}
-  _clickColorImage: {r: 0, g: 0, b: 0, a: 0}
-  _onClick:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 246819326}
-        m_TargetAssemblyTypeName: DialogueTrigger, Assembly-CSharp
-        m_MethodName: TriggerDialogue
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  _onEnter:
-    m_PersistentCalls:
-      m_Calls: []
-  _onExit:
-    m_PersistentCalls:
-      m_Calls: []
---- !u!114 &246819328
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 246819324}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 0}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &246819329
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 246819324}
-  m_CullTransparentMesh: 1
---- !u!1 &420318760
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 420318761}
-  - component: {fileID: 420318765}
-  - component: {fileID: 420318764}
-  - component: {fileID: 420318763}
-  - component: {fileID: 420318762}
-  m_Layer: 5
-  m_Name: "Cl\xE9 Trouv\xE9"
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &420318761
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 420318760}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 3, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 996648050}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 200}
-  m_SizeDelta: {x: 100, y: 100}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &420318762
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 420318760}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e4a963925bc280046a5480fabad7e518, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _dialogue:
-    _name: 
-    _spriteBackground: {fileID: 0}
-    _firstChoice: {fileID: 0}
-    _secondChoice: {fileID: 0}
-    _thirdChoice: {fileID: 0}
-    _sentences: []
---- !u!114 &420318763
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 420318760}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bba4c1acf59c37342924fcdc6cb396d5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _interactable: 1
-  _interactableImage: 0
-  _interactableSprite: 0
-  _enterSprite: {fileID: 0}
-  _exitSprite: {fileID: 0}
-  _enterColor: {r: 1, g: 1, b: 1, a: 1}
-  _enterColorImage: {r: 0, g: 0, b: 0, a: 0}
-  _exitColor: {r: 1, g: 1, b: 1, a: 1}
-  _exitColorImage: {r: 0, g: 0, b: 0, a: 0}
-  _clickColor: {r: 1, g: 0.995283, b: 0.995283, a: 1}
-  _clickColorImage: {r: 0, g: 0, b: 0, a: 0}
-  _onClick:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 420318762}
-        m_TargetAssemblyTypeName: DialogueTrigger, Assembly-CSharp
-        m_MethodName: TriggerDialogue
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  _onEnter:
-    m_PersistentCalls:
-      m_Calls: []
-  _onExit:
-    m_PersistentCalls:
-      m_Calls: []
---- !u!114 &420318764
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 420318760}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 0}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &420318765
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 420318760}
-  m_CullTransparentMesh: 1
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -1254,146 +703,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &534578623
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 534578624}
-  - component: {fileID: 534578628}
-  - component: {fileID: 534578627}
-  - component: {fileID: 534578626}
-  - component: {fileID: 534578625}
-  m_Layer: 5
-  m_Name: Chemin Lumineux
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &534578624
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 534578623}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 3, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 996648050}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 200}
-  m_SizeDelta: {x: 100, y: 100}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &534578625
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 534578623}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e4a963925bc280046a5480fabad7e518, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _dialogue:
-    _name: 
-    _spriteBackground: {fileID: 0}
-    _firstChoice: {fileID: 0}
-    _secondChoice: {fileID: 0}
-    _thirdChoice: {fileID: 0}
-    _sentences: []
---- !u!114 &534578626
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 534578623}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bba4c1acf59c37342924fcdc6cb396d5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _interactable: 1
-  _interactableImage: 0
-  _interactableSprite: 0
-  _enterSprite: {fileID: 0}
-  _exitSprite: {fileID: 0}
-  _enterColor: {r: 1, g: 1, b: 1, a: 1}
-  _enterColorImage: {r: 0, g: 0, b: 0, a: 0}
-  _exitColor: {r: 1, g: 1, b: 1, a: 1}
-  _exitColorImage: {r: 0, g: 0, b: 0, a: 0}
-  _clickColor: {r: 1, g: 0.995283, b: 0.995283, a: 1}
-  _clickColorImage: {r: 0, g: 0, b: 0, a: 0}
-  _onClick:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 534578625}
-        m_TargetAssemblyTypeName: DialogueTrigger, Assembly-CSharp
-        m_MethodName: TriggerDialogue
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  _onEnter:
-    m_PersistentCalls:
-      m_Calls: []
-  _onExit:
-    m_PersistentCalls:
-      m_Calls: []
---- !u!114 &534578627
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 534578623}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 0}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &534578628
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 534578623}
-  m_CullTransparentMesh: 1
 --- !u!1 &592577110
 GameObject:
   m_ObjectHideFlags: 0
@@ -1494,706 +803,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!1 &812505877
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 812505878}
-  - component: {fileID: 812505882}
-  - component: {fileID: 812505881}
-  - component: {fileID: 812505880}
-  - component: {fileID: 812505879}
-  m_Layer: 5
-  m_Name: GardeChasse Dialogue Fuite
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &812505878
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 812505877}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 3, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 996648050}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 200}
-  m_SizeDelta: {x: 100, y: 100}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &812505879
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 812505877}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e4a963925bc280046a5480fabad7e518, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _dialogue:
-    _name: 
-    _spriteBackground: {fileID: 0}
-    _firstChoice: {fileID: 0}
-    _secondChoice: {fileID: 0}
-    _thirdChoice: {fileID: 0}
-    _sentences: []
---- !u!114 &812505880
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 812505877}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bba4c1acf59c37342924fcdc6cb396d5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _interactable: 1
-  _interactableImage: 0
-  _interactableSprite: 0
-  _enterSprite: {fileID: 0}
-  _exitSprite: {fileID: 0}
-  _enterColor: {r: 1, g: 1, b: 1, a: 1}
-  _enterColorImage: {r: 0, g: 0, b: 0, a: 0}
-  _exitColor: {r: 1, g: 1, b: 1, a: 1}
-  _exitColorImage: {r: 0, g: 0, b: 0, a: 0}
-  _clickColor: {r: 1, g: 0.995283, b: 0.995283, a: 1}
-  _clickColorImage: {r: 0, g: 0, b: 0, a: 0}
-  _onClick:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 812505879}
-        m_TargetAssemblyTypeName: DialogueTrigger, Assembly-CSharp
-        m_MethodName: TriggerDialogue
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  _onEnter:
-    m_PersistentCalls:
-      m_Calls: []
-  _onExit:
-    m_PersistentCalls:
-      m_Calls: []
---- !u!114 &812505881
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 812505877}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 0}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &812505882
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 812505877}
-  m_CullTransparentMesh: 1
---- !u!1 &813745011
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 813745012}
-  - component: {fileID: 813745016}
-  - component: {fileID: 813745015}
-  - component: {fileID: 813745014}
-  - component: {fileID: 813745013}
-  m_Layer: 5
-  m_Name: "Choix Entr\xE9e Crypte"
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &813745012
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 813745011}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 3, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 996648050}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 200}
-  m_SizeDelta: {x: 100, y: 100}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &813745013
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 813745011}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e4a963925bc280046a5480fabad7e518, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _dialogue:
-    _name: 
-    _spriteBackground: {fileID: 0}
-    _firstChoice: {fileID: 0}
-    _secondChoice: {fileID: 0}
-    _thirdChoice: {fileID: 0}
-    _sentences: []
---- !u!114 &813745014
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 813745011}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bba4c1acf59c37342924fcdc6cb396d5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _interactable: 1
-  _interactableImage: 0
-  _interactableSprite: 0
-  _enterSprite: {fileID: 0}
-  _exitSprite: {fileID: 0}
-  _enterColor: {r: 1, g: 1, b: 1, a: 1}
-  _enterColorImage: {r: 0, g: 0, b: 0, a: 0}
-  _exitColor: {r: 1, g: 1, b: 1, a: 1}
-  _exitColorImage: {r: 0, g: 0, b: 0, a: 0}
-  _clickColor: {r: 1, g: 0.995283, b: 0.995283, a: 1}
-  _clickColorImage: {r: 0, g: 0, b: 0, a: 0}
-  _onClick:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 813745013}
-        m_TargetAssemblyTypeName: DialogueTrigger, Assembly-CSharp
-        m_MethodName: TriggerDialogue
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  _onEnter:
-    m_PersistentCalls:
-      m_Calls: []
-  _onExit:
-    m_PersistentCalls:
-      m_Calls: []
---- !u!114 &813745015
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 813745011}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 0}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &813745016
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 813745011}
-  m_CullTransparentMesh: 1
---- !u!1 &823708956
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 823708957}
-  - component: {fileID: 823708961}
-  - component: {fileID: 823708960}
-  - component: {fileID: 823708959}
-  - component: {fileID: 823708958}
-  m_Layer: 5
-  m_Name: Chien Fuite
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &823708957
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 823708956}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 3, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 996648050}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 200}
-  m_SizeDelta: {x: 100, y: 100}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &823708958
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 823708956}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e4a963925bc280046a5480fabad7e518, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _dialogue:
-    _name: 
-    _spriteBackground: {fileID: 0}
-    _firstChoice: {fileID: 0}
-    _secondChoice: {fileID: 0}
-    _thirdChoice: {fileID: 0}
-    _sentences: []
---- !u!114 &823708959
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 823708956}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bba4c1acf59c37342924fcdc6cb396d5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _interactable: 1
-  _interactableImage: 0
-  _interactableSprite: 0
-  _enterSprite: {fileID: 0}
-  _exitSprite: {fileID: 0}
-  _enterColor: {r: 1, g: 1, b: 1, a: 1}
-  _enterColorImage: {r: 0, g: 0, b: 0, a: 0}
-  _exitColor: {r: 1, g: 1, b: 1, a: 1}
-  _exitColorImage: {r: 0, g: 0, b: 0, a: 0}
-  _clickColor: {r: 1, g: 0.995283, b: 0.995283, a: 1}
-  _clickColorImage: {r: 0, g: 0, b: 0, a: 0}
-  _onClick:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 823708958}
-        m_TargetAssemblyTypeName: DialogueTrigger, Assembly-CSharp
-        m_MethodName: TriggerDialogue
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  _onEnter:
-    m_PersistentCalls:
-      m_Calls: []
-  _onExit:
-    m_PersistentCalls:
-      m_Calls: []
---- !u!114 &823708960
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 823708956}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 0}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &823708961
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 823708956}
-  m_CullTransparentMesh: 1
---- !u!1 &891400469
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 891400470}
-  - component: {fileID: 891400474}
-  - component: {fileID: 891400473}
-  - component: {fileID: 891400472}
-  - component: {fileID: 891400471}
-  m_Layer: 5
-  m_Name: Obtention Pieux
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &891400470
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 891400469}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 3, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 996648050}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 200}
-  m_SizeDelta: {x: 100, y: 100}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &891400471
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 891400469}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e4a963925bc280046a5480fabad7e518, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _dialogue:
-    _name: 
-    _spriteBackground: {fileID: 0}
-    _firstChoice: {fileID: 0}
-    _secondChoice: {fileID: 0}
-    _thirdChoice: {fileID: 0}
-    _sentences: []
---- !u!114 &891400472
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 891400469}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bba4c1acf59c37342924fcdc6cb396d5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _interactable: 1
-  _interactableImage: 0
-  _interactableSprite: 0
-  _enterSprite: {fileID: 0}
-  _exitSprite: {fileID: 0}
-  _enterColor: {r: 1, g: 1, b: 1, a: 1}
-  _enterColorImage: {r: 0, g: 0, b: 0, a: 0}
-  _exitColor: {r: 1, g: 1, b: 1, a: 1}
-  _exitColorImage: {r: 0, g: 0, b: 0, a: 0}
-  _clickColor: {r: 1, g: 0.995283, b: 0.995283, a: 1}
-  _clickColorImage: {r: 0, g: 0, b: 0, a: 0}
-  _onClick:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 891400471}
-        m_TargetAssemblyTypeName: DialogueTrigger, Assembly-CSharp
-        m_MethodName: TriggerDialogue
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  _onEnter:
-    m_PersistentCalls:
-      m_Calls: []
-  _onExit:
-    m_PersistentCalls:
-      m_Calls: []
---- !u!114 &891400473
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 891400469}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 0}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &891400474
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 891400469}
-  m_CullTransparentMesh: 1
---- !u!1 &908562228
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 908562229}
-  - component: {fileID: 908562233}
-  - component: {fileID: 908562232}
-  - component: {fileID: 908562231}
-  - component: {fileID: 908562230}
-  m_Layer: 5
-  m_Name: Mort du Joueur par Dracula
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &908562229
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 908562228}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 3, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 996648050}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 200}
-  m_SizeDelta: {x: 100, y: 100}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &908562230
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 908562228}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e4a963925bc280046a5480fabad7e518, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _dialogue:
-    _name: 
-    _spriteBackground: {fileID: 0}
-    _firstChoice: {fileID: 0}
-    _secondChoice: {fileID: 0}
-    _thirdChoice: {fileID: 0}
-    _sentences: []
---- !u!114 &908562231
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 908562228}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bba4c1acf59c37342924fcdc6cb396d5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _interactable: 1
-  _interactableImage: 0
-  _interactableSprite: 0
-  _enterSprite: {fileID: 0}
-  _exitSprite: {fileID: 0}
-  _enterColor: {r: 1, g: 1, b: 1, a: 1}
-  _enterColorImage: {r: 0, g: 0, b: 0, a: 0}
-  _exitColor: {r: 1, g: 1, b: 1, a: 1}
-  _exitColorImage: {r: 0, g: 0, b: 0, a: 0}
-  _clickColor: {r: 1, g: 0.995283, b: 0.995283, a: 1}
-  _clickColorImage: {r: 0, g: 0, b: 0, a: 0}
-  _onClick:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 908562230}
-        m_TargetAssemblyTypeName: DialogueTrigger, Assembly-CSharp
-        m_MethodName: TriggerDialogue
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  _onEnter:
-    m_PersistentCalls:
-      m_Calls: []
-  _onExit:
-    m_PersistentCalls:
-      m_Calls: []
---- !u!114 &908562232
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 908562228}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 0}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &908562233
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 908562228}
-  m_CullTransparentMesh: 1
 --- !u!1 &996648046
 GameObject:
   m_ObjectHideFlags: 0
@@ -2242,10 +851,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
+  m_ReferenceResolution: {x: 1920, y: 1080}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
@@ -2288,33 +897,15 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 126314808}
-  - {fileID: 1319601960}
+  - {fileID: 1360687118}
   - {fileID: 1331375327}
   - {fileID: 156565399}
-  - {fileID: 2119433503}
-  - {fileID: 823708957}
-  - {fileID: 120921555}
-  - {fileID: 534578624}
-  - {fileID: 1783933460}
-  - {fileID: 813745012}
-  - {fileID: 1685029886}
-  - {fileID: 420318761}
-  - {fileID: 1296234882}
-  - {fileID: 1921304549}
-  - {fileID: 2018552310}
-  - {fileID: 1924449765}
-  - {fileID: 246819325}
-  - {fileID: 908562229}
-  - {fileID: 1758221388}
-  - {fileID: 2141219790}
-  - {fileID: 891400470}
-  - {fileID: 812505878}
-  - {fileID: 132256554}
-  - {fileID: 1815400428}
-  - {fileID: 106980649}
-  - {fileID: 1480454321}
+  - {fileID: 1311791208}
+  - {fileID: 88245352}
+  - {fileID: 2144630870}
+  - {fileID: 1840825030}
   - {fileID: 191420690}
+  - {fileID: 126314808}
   m_Father: {fileID: 1220028009}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -2351,12 +942,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf11399f950118345b92b838e6644bdf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _background: {fileID: 0}
+  _transition: {fileID: 126314807}
+  _background: {fileID: 1360687117}
+  _backText: {fileID: 1582067626}
   _nameText: {fileID: 1270023454}
   _dialogueText: {fileID: 1874413137}
-  _firstChoiceText: {fileID: 0}
-  _secondChoiceText: {fileID: 0}
-  _thirdChoiceText: {fileID: 0}
+  _parentChoiceText: {fileID: 1840825030}
+  _parentOutText: {fileID: 996648050}
   _animator: {fileID: 592577114}
   _animatorTransition: {fileID: 126314809}
 --- !u!4 &1220028009
@@ -2509,7 +1101,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1270023452}
   m_CullTransparentMesh: 1
---- !u!1 &1296234881
+--- !u!1 &1311791207
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2517,63 +1109,69 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 1296234882}
-  - component: {fileID: 1296234886}
-  - component: {fileID: 1296234885}
-  - component: {fileID: 1296234884}
-  - component: {fileID: 1296234883}
+  - component: {fileID: 1311791208}
+  - component: {fileID: 1311791212}
+  - component: {fileID: 1311791211}
+  - component: {fileID: 1311791210}
+  - component: {fileID: 1311791209}
   m_Layer: 5
-  m_Name: Ourvir le coffre
+  m_Name: "Visite du cimeti\xE8re"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1296234882
+  m_IsActive: 0
+--- !u!224 &1311791208
 RectTransform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1296234881}
+  m_GameObject: {fileID: 1311791207}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 3, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 996648050}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 200}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1296234883
+--- !u!114 &1311791209
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1296234881}
+  m_GameObject: {fileID: 1311791207}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e4a963925bc280046a5480fabad7e518, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _dialogue:
-    _name: 
+    _name: William
     _spriteBackground: {fileID: 0}
-    _firstChoice: {fileID: 0}
-    _secondChoice: {fileID: 0}
-    _thirdChoice: {fileID: 0}
-    _sentences: []
---- !u!114 &1296234884
+    _choice:
+    - {fileID: 88245351}
+    _sentences:
+    - "La carte ne semble ne plus \xEAtre assez pr\xE9cise, il va donc falloir explorer
+      le cimeti\xE8re de fond en comble afin de trouver ce tr\xE9sor mais  deux chemins
+      se pr\xE9sentent ."
+    - "Il semblerait que celui de gauche soit \xE9clair\xE9 tandis que celui de droite
+      baigne dans la p\xE9nombre."
+    - "Devrais-je choisir d\u2019explorer le chemin de droite \xE0 la lueur douce
+      et rassurante ou alors devrais-je explorer la froideur de l\u2019obscurit\xE9."
+--- !u!114 &1311791210
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1296234881}
+  m_GameObject: {fileID: 1311791207}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bba4c1acf59c37342924fcdc6cb396d5, type: 3}
@@ -2593,7 +1191,7 @@ MonoBehaviour:
   _onClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1296234883}
+      - m_Target: {fileID: 1311791209}
         m_TargetAssemblyTypeName: DialogueTrigger, Assembly-CSharp
         m_MethodName: TriggerDialogue
         m_Mode: 1
@@ -2611,13 +1209,13 @@ MonoBehaviour:
   _onExit:
     m_PersistentCalls:
       m_Calls: []
---- !u!114 &1296234885
+--- !u!114 &1311791211
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1296234881}
+  m_GameObject: {fileID: 1311791207}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
@@ -2641,157 +1239,14 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!222 &1296234886
+--- !u!222 &1311791212
 CanvasRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1296234881}
+  m_GameObject: {fileID: 1311791207}
   m_CullTransparentMesh: 1
---- !u!1 &1319601959
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1319601960}
-  - component: {fileID: 1319601963}
-  - component: {fileID: 1319601962}
-  - component: {fileID: 1319601961}
-  - component: {fileID: 1319601964}
-  m_Layer: 5
-  m_Name: StartDialogueButton
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1319601960
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1319601959}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 3, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 996648050}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 200}
-  m_SizeDelta: {x: 100, y: 100}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1319601961
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1319601959}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bba4c1acf59c37342924fcdc6cb396d5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _interactable: 1
-  _interactableImage: 0
-  _interactableSprite: 0
-  _enterSprite: {fileID: 0}
-  _exitSprite: {fileID: 0}
-  _enterColor: {r: 1, g: 1, b: 1, a: 1}
-  _enterColorImage: {r: 0, g: 0, b: 0, a: 0}
-  _exitColor: {r: 1, g: 1, b: 1, a: 1}
-  _exitColorImage: {r: 0, g: 0, b: 0, a: 0}
-  _clickColor: {r: 1, g: 0.995283, b: 0.995283, a: 1}
-  _clickColorImage: {r: 0, g: 0, b: 0, a: 0}
-  _onClick:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1220028008}
-        m_TargetAssemblyTypeName: DialogueManager, Assembly-CSharp
-        m_MethodName: startOk
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  _onEnter:
-    m_PersistentCalls:
-      m_Calls: []
-  _onExit:
-    m_PersistentCalls:
-      m_Calls: []
---- !u!114 &1319601962
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1319601959}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 0}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &1319601963
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1319601959}
-  m_CullTransparentMesh: 1
---- !u!114 &1319601964
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1319601959}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e4a963925bc280046a5480fabad7e518, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _dialogue:
-    _name: Electro
-    _spriteBackground: {fileID: 0}
-    _firstChoice: {fileID: 0}
-    _secondChoice: {fileID: 0}
-    _thirdChoice: {fileID: 0}
-    _sentences:
-    - "La mort est ma r\xE9demption"
-    - "Un homme ne meurt que quand il est oubli\xE9 des siens..."
-    - Baptiste le bg
 --- !u!1 &1331375326
 GameObject:
   m_ObjectHideFlags: 0
@@ -2806,7 +1261,7 @@ GameObject:
   - component: {fileID: 1331375329}
   - component: {fileID: 1331375328}
   m_Layer: 5
-  m_Name: StartDialogueButton (1)
+  m_Name: StartDialogueButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2846,9 +1301,8 @@ MonoBehaviour:
   _dialogue:
     _name: Baptiste
     _spriteBackground: {fileID: 0}
-    _firstChoice: {fileID: 0}
-    _secondChoice: {fileID: 0}
-    _thirdChoice: {fileID: 0}
+    _choice:
+    - {fileID: 156565398}
     _sentences:
     - Omg papi gabriel
     - Hello bitch
@@ -2935,7 +1389,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1331375326}
   m_CullTransparentMesh: 1
---- !u!1 &1480454320
+--- !u!1 &1360687117
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2943,107 +1397,42 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 1480454321}
-  - component: {fileID: 1480454325}
-  - component: {fileID: 1480454324}
-  - component: {fileID: 1480454323}
-  - component: {fileID: 1480454322}
+  - component: {fileID: 1360687118}
+  - component: {fileID: 1360687120}
+  - component: {fileID: 1360687119}
   m_Layer: 5
-  m_Name: "Retour Entr\xE9e"
+  m_Name: Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1480454321
+  m_IsActive: 0
+--- !u!224 &1360687118
 RectTransform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1480454320}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_GameObject: {fileID: 1360687117}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 3, y: 1, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 996648050}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 200}
-  m_SizeDelta: {x: 100, y: 100}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 1920, y: 1080}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1480454322
+--- !u!114 &1360687119
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1480454320}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e4a963925bc280046a5480fabad7e518, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _dialogue:
-    _name: 
-    _spriteBackground: {fileID: 0}
-    _firstChoice: {fileID: 0}
-    _secondChoice: {fileID: 0}
-    _thirdChoice: {fileID: 0}
-    _sentences: []
---- !u!114 &1480454323
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1480454320}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bba4c1acf59c37342924fcdc6cb396d5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _interactable: 1
-  _interactableImage: 0
-  _interactableSprite: 0
-  _enterSprite: {fileID: 0}
-  _exitSprite: {fileID: 0}
-  _enterColor: {r: 1, g: 1, b: 1, a: 1}
-  _enterColorImage: {r: 0, g: 0, b: 0, a: 0}
-  _exitColor: {r: 1, g: 1, b: 1, a: 1}
-  _exitColorImage: {r: 0, g: 0, b: 0, a: 0}
-  _clickColor: {r: 1, g: 0.995283, b: 0.995283, a: 1}
-  _clickColorImage: {r: 0, g: 0, b: 0, a: 0}
-  _onClick:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1480454322}
-        m_TargetAssemblyTypeName: DialogueTrigger, Assembly-CSharp
-        m_MethodName: TriggerDialogue
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  _onEnter:
-    m_PersistentCalls:
-      m_Calls: []
-  _onExit:
-    m_PersistentCalls:
-      m_Calls: []
---- !u!114 &1480454324
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1480454320}
+  m_GameObject: {fileID: 1360687117}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
@@ -3067,13 +1456,13 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!222 &1480454325
+--- !u!222 &1360687120
 CanvasRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1480454320}
+  m_GameObject: {fileID: 1360687117}
   m_CullTransparentMesh: 1
 --- !u!1 &1582067626
 GameObject:
@@ -3211,9 +1600,7 @@ MonoBehaviour:
   _dialogue:
     _name: Electro
     _spriteBackground: {fileID: 0}
-    _firstChoice: {fileID: 0}
-    _secondChoice: {fileID: 0}
-    _thirdChoice: {fileID: 0}
+    _choice: []
     _sentences:
     - "La mort est ma r\xE9demption"
     - "Un homme ne meurt que quand il est oubli\xE9 des siens..."
@@ -3286,7 +1673,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1685029885
+--- !u!1 &1840825029
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3294,558 +1681,60 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 1685029886}
-  - component: {fileID: 1685029890}
-  - component: {fileID: 1685029889}
-  - component: {fileID: 1685029888}
-  - component: {fileID: 1685029887}
+  - component: {fileID: 1840825030}
+  - component: {fileID: 1840825031}
   m_Layer: 5
-  m_Name: Choix Ourvir Cerceuil
+  m_Name: Choice
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!224 &1685029886
+--- !u!224 &1840825030
 RectTransform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1685029885}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_GameObject: {fileID: 1840825029}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 3, y: 1, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 996648050}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 200}
-  m_SizeDelta: {x: 100, y: 100}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 1200, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1685029887
+--- !u!114 &1840825031
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1685029885}
+  m_GameObject: {fileID: 1840825029}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e4a963925bc280046a5480fabad7e518, type: 3}
+  m_Script: {fileID: 11500000, guid: 30649d3a9faa99c48a7b1166b86bf2a0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _dialogue:
-    _name: 
-    _spriteBackground: {fileID: 0}
-    _firstChoice: {fileID: 0}
-    _secondChoice: {fileID: 0}
-    _thirdChoice: {fileID: 0}
-    _sentences: []
---- !u!114 &1685029888
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1685029885}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bba4c1acf59c37342924fcdc6cb396d5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _interactable: 1
-  _interactableImage: 0
-  _interactableSprite: 0
-  _enterSprite: {fileID: 0}
-  _exitSprite: {fileID: 0}
-  _enterColor: {r: 1, g: 1, b: 1, a: 1}
-  _enterColorImage: {r: 0, g: 0, b: 0, a: 0}
-  _exitColor: {r: 1, g: 1, b: 1, a: 1}
-  _exitColorImage: {r: 0, g: 0, b: 0, a: 0}
-  _clickColor: {r: 1, g: 0.995283, b: 0.995283, a: 1}
-  _clickColorImage: {r: 0, g: 0, b: 0, a: 0}
-  _onClick:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1685029887}
-        m_TargetAssemblyTypeName: DialogueTrigger, Assembly-CSharp
-        m_MethodName: TriggerDialogue
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  _onEnter:
-    m_PersistentCalls:
-      m_Calls: []
-  _onExit:
-    m_PersistentCalls:
-      m_Calls: []
---- !u!114 &1685029889
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1685029885}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 0}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &1685029890
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1685029885}
-  m_CullTransparentMesh: 1
---- !u!1 &1758221387
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1758221388}
-  - component: {fileID: 1758221392}
-  - component: {fileID: 1758221391}
-  - component: {fileID: 1758221390}
-  - component: {fileID: 1758221389}
-  m_Layer: 5
-  m_Name: GardeChasse
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1758221388
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1758221387}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 3, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 996648050}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 200}
-  m_SizeDelta: {x: 100, y: 100}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1758221389
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1758221387}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e4a963925bc280046a5480fabad7e518, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _dialogue:
-    _name: 
-    _spriteBackground: {fileID: 0}
-    _firstChoice: {fileID: 0}
-    _secondChoice: {fileID: 0}
-    _thirdChoice: {fileID: 0}
-    _sentences: []
---- !u!114 &1758221390
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1758221387}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bba4c1acf59c37342924fcdc6cb396d5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _interactable: 1
-  _interactableImage: 0
-  _interactableSprite: 0
-  _enterSprite: {fileID: 0}
-  _exitSprite: {fileID: 0}
-  _enterColor: {r: 1, g: 1, b: 1, a: 1}
-  _enterColorImage: {r: 0, g: 0, b: 0, a: 0}
-  _exitColor: {r: 1, g: 1, b: 1, a: 1}
-  _exitColorImage: {r: 0, g: 0, b: 0, a: 0}
-  _clickColor: {r: 1, g: 0.995283, b: 0.995283, a: 1}
-  _clickColorImage: {r: 0, g: 0, b: 0, a: 0}
-  _onClick:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1758221389}
-        m_TargetAssemblyTypeName: DialogueTrigger, Assembly-CSharp
-        m_MethodName: TriggerDialogue
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  _onEnter:
-    m_PersistentCalls:
-      m_Calls: []
-  _onExit:
-    m_PersistentCalls:
-      m_Calls: []
---- !u!114 &1758221391
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1758221387}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 0}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &1758221392
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1758221387}
-  m_CullTransparentMesh: 1
---- !u!1 &1783933459
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1783933460}
-  - component: {fileID: 1783933464}
-  - component: {fileID: 1783933463}
-  - component: {fileID: 1783933462}
-  - component: {fileID: 1783933461}
-  m_Layer: 5
-  m_Name: Chemin Obscure
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1783933460
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1783933459}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 3, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 996648050}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 200}
-  m_SizeDelta: {x: 100, y: 100}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1783933461
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1783933459}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e4a963925bc280046a5480fabad7e518, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _dialogue:
-    _name: 
-    _spriteBackground: {fileID: 0}
-    _firstChoice: {fileID: 0}
-    _secondChoice: {fileID: 0}
-    _thirdChoice: {fileID: 0}
-    _sentences: []
---- !u!114 &1783933462
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1783933459}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bba4c1acf59c37342924fcdc6cb396d5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _interactable: 1
-  _interactableImage: 0
-  _interactableSprite: 0
-  _enterSprite: {fileID: 0}
-  _exitSprite: {fileID: 0}
-  _enterColor: {r: 1, g: 1, b: 1, a: 1}
-  _enterColorImage: {r: 0, g: 0, b: 0, a: 0}
-  _exitColor: {r: 1, g: 1, b: 1, a: 1}
-  _exitColorImage: {r: 0, g: 0, b: 0, a: 0}
-  _clickColor: {r: 1, g: 0.995283, b: 0.995283, a: 1}
-  _clickColorImage: {r: 0, g: 0, b: 0, a: 0}
-  _onClick:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1783933461}
-        m_TargetAssemblyTypeName: DialogueTrigger, Assembly-CSharp
-        m_MethodName: TriggerDialogue
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  _onEnter:
-    m_PersistentCalls:
-      m_Calls: []
-  _onExit:
-    m_PersistentCalls:
-      m_Calls: []
---- !u!114 &1783933463
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1783933459}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 0}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &1783933464
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1783933459}
-  m_CullTransparentMesh: 1
---- !u!1 &1815400427
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1815400428}
-  - component: {fileID: 1815400432}
-  - component: {fileID: 1815400431}
-  - component: {fileID: 1815400430}
-  - component: {fileID: 1815400429}
-  m_Layer: 5
-  m_Name: GardeChasse Dialogue Chien
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1815400428
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1815400427}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 3, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 996648050}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 200}
-  m_SizeDelta: {x: 100, y: 100}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1815400429
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1815400427}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e4a963925bc280046a5480fabad7e518, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _dialogue:
-    _name: 
-    _spriteBackground: {fileID: 0}
-    _firstChoice: {fileID: 0}
-    _secondChoice: {fileID: 0}
-    _thirdChoice: {fileID: 0}
-    _sentences: []
---- !u!114 &1815400430
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1815400427}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bba4c1acf59c37342924fcdc6cb396d5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _interactable: 1
-  _interactableImage: 0
-  _interactableSprite: 0
-  _enterSprite: {fileID: 0}
-  _exitSprite: {fileID: 0}
-  _enterColor: {r: 1, g: 1, b: 1, a: 1}
-  _enterColorImage: {r: 0, g: 0, b: 0, a: 0}
-  _exitColor: {r: 1, g: 1, b: 1, a: 1}
-  _exitColorImage: {r: 0, g: 0, b: 0, a: 0}
-  _clickColor: {r: 1, g: 0.995283, b: 0.995283, a: 1}
-  _clickColorImage: {r: 0, g: 0, b: 0, a: 0}
-  _onClick:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1815400429}
-        m_TargetAssemblyTypeName: DialogueTrigger, Assembly-CSharp
-        m_MethodName: TriggerDialogue
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  _onEnter:
-    m_PersistentCalls:
-      m_Calls: []
-  _onExit:
-    m_PersistentCalls:
-      m_Calls: []
---- !u!114 &1815400431
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1815400427}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 0}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &1815400432
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1815400427}
-  m_CullTransparentMesh: 1
+  m_Padding:
+    m_Left: 0
+    m_Right: 0
+    m_Top: 0
+    m_Bottom: 0
+  m_ChildAlignment: 4
+  m_Spacing: 0
+  m_ChildForceExpandWidth: 1
+  m_ChildForceExpandHeight: 1
+  m_ChildControlWidth: 0
+  m_ChildControlHeight: 0
+  m_ChildScaleWidth: 0
+  m_ChildScaleHeight: 0
+  m_ReverseArrangement: 0
 --- !u!1 &1874413135
 GameObject:
   m_ObjectHideFlags: 0
@@ -3980,7 +1869,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1874413135}
   m_CullTransparentMesh: 1
---- !u!1 &1921304548
+--- !u!1 &2144630869
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3988,63 +1877,65 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 1921304549}
-  - component: {fileID: 1921304553}
-  - component: {fileID: 1921304552}
-  - component: {fileID: 1921304551}
-  - component: {fileID: 1921304550}
+  - component: {fileID: 2144630870}
+  - component: {fileID: 2144630874}
+  - component: {fileID: 2144630873}
+  - component: {fileID: 2144630872}
+  - component: {fileID: 2144630871}
   m_Layer: 5
-  m_Name: "Tr\xE9sor"
+  m_Name: Ouverture de la tombe
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1921304549
+  m_IsActive: 0
+--- !u!224 &2144630870
 RectTransform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1921304548}
+  m_GameObject: {fileID: 2144630869}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 3, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 996648050}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 200}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1921304550
+--- !u!114 &2144630871
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1921304548}
+  m_GameObject: {fileID: 2144630869}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e4a963925bc280046a5480fabad7e518, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _dialogue:
-    _name: 
+    _name: William
     _spriteBackground: {fileID: 0}
-    _firstChoice: {fileID: 0}
-    _secondChoice: {fileID: 0}
-    _thirdChoice: {fileID: 0}
-    _sentences: []
---- !u!114 &1921304551
+    _choice:
+    - {fileID: 0}
+    _sentences:
+    - "Il y a une cl\xE9 dans cette tombe, peut-\xEAtre est-ce la cl\xE9 du tr\xE9sor
+      ?"
+    - "Je vais la ramasser qui sait peut \xEAtre qu\u2019elle nous sera utile."
+--- !u!114 &2144630872
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1921304548}
+  m_GameObject: {fileID: 2144630869}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bba4c1acf59c37342924fcdc6cb396d5, type: 3}
@@ -4064,7 +1955,7 @@ MonoBehaviour:
   _onClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1921304550}
+      - m_Target: {fileID: 2144630871}
         m_TargetAssemblyTypeName: DialogueTrigger, Assembly-CSharp
         m_MethodName: TriggerDialogue
         m_Mode: 1
@@ -4082,13 +1973,13 @@ MonoBehaviour:
   _onExit:
     m_PersistentCalls:
       m_Calls: []
---- !u!114 &1921304552
+--- !u!114 &2144630873
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1921304548}
+  m_GameObject: {fileID: 2144630869}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
@@ -4112,573 +2003,13 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!222 &1921304553
+--- !u!222 &2144630874
 CanvasRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1921304548}
-  m_CullTransparentMesh: 1
---- !u!1 &1924449764
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1924449765}
-  - component: {fileID: 1924449769}
-  - component: {fileID: 1924449768}
-  - component: {fileID: 1924449767}
-  - component: {fileID: 1924449766}
-  m_Layer: 5
-  m_Name: "Dracula D\xE9couverte"
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1924449765
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1924449764}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 3, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 996648050}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 200}
-  m_SizeDelta: {x: 100, y: 100}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1924449766
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1924449764}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e4a963925bc280046a5480fabad7e518, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _dialogue:
-    _name: 
-    _spriteBackground: {fileID: 0}
-    _firstChoice: {fileID: 0}
-    _secondChoice: {fileID: 0}
-    _thirdChoice: {fileID: 0}
-    _sentences: []
---- !u!114 &1924449767
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1924449764}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bba4c1acf59c37342924fcdc6cb396d5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _interactable: 1
-  _interactableImage: 0
-  _interactableSprite: 0
-  _enterSprite: {fileID: 0}
-  _exitSprite: {fileID: 0}
-  _enterColor: {r: 1, g: 1, b: 1, a: 1}
-  _enterColorImage: {r: 0, g: 0, b: 0, a: 0}
-  _exitColor: {r: 1, g: 1, b: 1, a: 1}
-  _exitColorImage: {r: 0, g: 0, b: 0, a: 0}
-  _clickColor: {r: 1, g: 0.995283, b: 0.995283, a: 1}
-  _clickColorImage: {r: 0, g: 0, b: 0, a: 0}
-  _onClick:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1924449766}
-        m_TargetAssemblyTypeName: DialogueTrigger, Assembly-CSharp
-        m_MethodName: TriggerDialogue
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  _onEnter:
-    m_PersistentCalls:
-      m_Calls: []
-  _onExit:
-    m_PersistentCalls:
-      m_Calls: []
---- !u!114 &1924449768
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1924449764}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 0}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &1924449769
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1924449764}
-  m_CullTransparentMesh: 1
---- !u!1 &2018552309
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2018552310}
-  - component: {fileID: 2018552314}
-  - component: {fileID: 2018552313}
-  - component: {fileID: 2018552312}
-  - component: {fileID: 2018552311}
-  m_Layer: 5
-  m_Name: Explorer Crypte
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &2018552310
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2018552309}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 3, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 996648050}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 200}
-  m_SizeDelta: {x: 100, y: 100}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &2018552311
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2018552309}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e4a963925bc280046a5480fabad7e518, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _dialogue:
-    _name: 
-    _spriteBackground: {fileID: 0}
-    _firstChoice: {fileID: 0}
-    _secondChoice: {fileID: 0}
-    _thirdChoice: {fileID: 0}
-    _sentences: []
---- !u!114 &2018552312
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2018552309}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bba4c1acf59c37342924fcdc6cb396d5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _interactable: 1
-  _interactableImage: 0
-  _interactableSprite: 0
-  _enterSprite: {fileID: 0}
-  _exitSprite: {fileID: 0}
-  _enterColor: {r: 1, g: 1, b: 1, a: 1}
-  _enterColorImage: {r: 0, g: 0, b: 0, a: 0}
-  _exitColor: {r: 1, g: 1, b: 1, a: 1}
-  _exitColorImage: {r: 0, g: 0, b: 0, a: 0}
-  _clickColor: {r: 1, g: 0.995283, b: 0.995283, a: 1}
-  _clickColorImage: {r: 0, g: 0, b: 0, a: 0}
-  _onClick:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 2018552311}
-        m_TargetAssemblyTypeName: DialogueTrigger, Assembly-CSharp
-        m_MethodName: TriggerDialogue
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  _onEnter:
-    m_PersistentCalls:
-      m_Calls: []
-  _onExit:
-    m_PersistentCalls:
-      m_Calls: []
---- !u!114 &2018552313
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2018552309}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 0}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &2018552314
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2018552309}
-  m_CullTransparentMesh: 1
---- !u!1 &2119433502
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2119433503}
-  - component: {fileID: 2119433507}
-  - component: {fileID: 2119433506}
-  - component: {fileID: 2119433505}
-  - component: {fileID: 2119433504}
-  m_Layer: 5
-  m_Name: Niche Chien
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &2119433503
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2119433502}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 3, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 996648050}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 200}
-  m_SizeDelta: {x: 100, y: 100}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &2119433504
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2119433502}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e4a963925bc280046a5480fabad7e518, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _dialogue:
-    _name: 
-    _spriteBackground: {fileID: 0}
-    _firstChoice: {fileID: 0}
-    _secondChoice: {fileID: 0}
-    _thirdChoice: {fileID: 0}
-    _sentences: []
---- !u!114 &2119433505
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2119433502}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bba4c1acf59c37342924fcdc6cb396d5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _interactable: 1
-  _interactableImage: 0
-  _interactableSprite: 0
-  _enterSprite: {fileID: 0}
-  _exitSprite: {fileID: 0}
-  _enterColor: {r: 1, g: 1, b: 1, a: 1}
-  _enterColorImage: {r: 0, g: 0, b: 0, a: 0}
-  _exitColor: {r: 1, g: 1, b: 1, a: 1}
-  _exitColorImage: {r: 0, g: 0, b: 0, a: 0}
-  _clickColor: {r: 1, g: 0.995283, b: 0.995283, a: 1}
-  _clickColorImage: {r: 0, g: 0, b: 0, a: 0}
-  _onClick:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 2119433504}
-        m_TargetAssemblyTypeName: DialogueTrigger, Assembly-CSharp
-        m_MethodName: TriggerDialogue
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  _onEnter:
-    m_PersistentCalls:
-      m_Calls: []
-  _onExit:
-    m_PersistentCalls:
-      m_Calls: []
---- !u!114 &2119433506
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2119433502}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 0}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &2119433507
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2119433502}
-  m_CullTransparentMesh: 1
---- !u!1 &2141219789
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2141219790}
-  - component: {fileID: 2141219794}
-  - component: {fileID: 2141219793}
-  - component: {fileID: 2141219792}
-  - component: {fileID: 2141219791}
-  m_Layer: 5
-  m_Name: GardeChasse Dialogue
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &2141219790
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2141219789}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 3, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 996648050}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 200}
-  m_SizeDelta: {x: 100, y: 100}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &2141219791
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2141219789}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e4a963925bc280046a5480fabad7e518, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _dialogue:
-    _name: 
-    _spriteBackground: {fileID: 0}
-    _firstChoice: {fileID: 0}
-    _secondChoice: {fileID: 0}
-    _thirdChoice: {fileID: 0}
-    _sentences: []
---- !u!114 &2141219792
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2141219789}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bba4c1acf59c37342924fcdc6cb396d5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _interactable: 1
-  _interactableImage: 0
-  _interactableSprite: 0
-  _enterSprite: {fileID: 0}
-  _exitSprite: {fileID: 0}
-  _enterColor: {r: 1, g: 1, b: 1, a: 1}
-  _enterColorImage: {r: 0, g: 0, b: 0, a: 0}
-  _exitColor: {r: 1, g: 1, b: 1, a: 1}
-  _exitColorImage: {r: 0, g: 0, b: 0, a: 0}
-  _clickColor: {r: 1, g: 0.995283, b: 0.995283, a: 1}
-  _clickColorImage: {r: 0, g: 0, b: 0, a: 0}
-  _onClick:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 2141219791}
-        m_TargetAssemblyTypeName: DialogueTrigger, Assembly-CSharp
-        m_MethodName: TriggerDialogue
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  _onEnter:
-    m_PersistentCalls:
-      m_Calls: []
-  _onExit:
-    m_PersistentCalls:
-      m_Calls: []
---- !u!114 &2141219793
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2141219789}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 0}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &2141219794
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2141219789}
+  m_GameObject: {fileID: 2144630869}
   m_CullTransparentMesh: 1
 --- !u!1660057539 &9223372036854775807
 SceneRoots:

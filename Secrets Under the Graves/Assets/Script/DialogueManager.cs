@@ -7,16 +7,21 @@ public class DialogueManager : MonoBehaviour
 {
     public static DialogueManager Instance;
 
+    public GameObject _transition;
+    
     public GameObject _background;
+
+    public GameObject _backText;
 
     public TMP_Text _nameText;
     public TMP_Text _dialogueText;
 
-    public GameObject _firstChoiceText;
-    public GameObject _secondChoiceText;
-    public GameObject _thirdChoiceText;
+    public Transform _parentChoiceText;
+    public Transform _parentOutText;
 
     private Queue<string> _sentences;
+
+    private Dialogue _dialogue;
 
 
     [SerializeField] private Animator _animator;
@@ -26,13 +31,24 @@ public class DialogueManager : MonoBehaviour
     {
         Instance = this;
         _sentences = new Queue<string>();
+        _backText.SetActive(true);
     }
 
     public void StartDialogue(Dialogue dialogue)
     {
-        _animatorTransition.SetBool("Transition", !_animatorTransition.GetBool("Transition"));
-        _animatorTransition.SetBool("Transition", !_animatorTransition.GetBool("Transition"));
-        _animator.SetBool("Box", !_animator.GetBool("Box"));
+        if (_dialogue != null)
+        {
+            EndDialogue();
+        }
+        StartCoroutine(FirstDialogue(dialogue));
+    }
+
+    private IEnumerator FirstDialogue(Dialogue dialogue)
+    {
+        _animator.SetTrigger("BoxIn");
+        yield return new WaitForSeconds(3f);
+        _transition.SetActive(false);
+        _dialogue = dialogue;
         _nameText.text = dialogue._name;
         _sentences.Clear();
 
@@ -40,16 +56,27 @@ public class DialogueManager : MonoBehaviour
         {
             _sentences.Enqueue(sentence);
         }
+        foreach (GameObject choice in dialogue._choice)
+        {
+            choice.transform.SetParent(_parentChoiceText);
+        }
 
         DisplayNextSentence();
     }
 
     public void DisplayNextSentence()
     {
-        if (_sentences.Count == 0)
+        if (_sentences.Count == 1)
         {
-            EndDialogue();
-            return;
+            _backText.SetActive(false);
+            foreach (GameObject choice in _dialogue._choice)
+            {
+                choice.SetActive(true);
+            }
+        }
+        else
+        {
+            _backText.SetActive(true);
         }
 
         string sentence = _sentences.Dequeue();
@@ -67,8 +94,15 @@ public class DialogueManager : MonoBehaviour
         }
     }
 
-    void EndDialogue()
+    public void EndDialogue()
     {
-        _animator.SetBool("Box", !_animator.GetBool("Box"));  
+        _transition.SetActive(true);
+        _animator.SetTrigger("BoxOut");
+        _animatorTransition.SetTrigger("Transition");
+        foreach (GameObject choice in _dialogue._choice)
+        {
+            choice.SetActive(false);
+            choice.transform.SetParent(_parentOutText);
+        }
     }
 }
