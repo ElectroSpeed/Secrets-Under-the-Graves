@@ -56,11 +56,13 @@ public class DialogueManager : MonoBehaviour
         {
             _sentences.Enqueue(sentence);
         }
-        foreach (GameObject choice in dialogue._choice)
+        if (_dialogue._choice.Count != 0)
         {
-            choice.transform.SetParent(_parentChoiceText);
+            foreach (GameObject choice in dialogue._choice)
+            {
+                choice.transform.SetParent(_parentChoiceText);
+            }
         }
-
         DisplayNextSentence();
     }
 
