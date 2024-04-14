@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.UI;
 
 public class DialogueManager : MonoBehaviour
 {
@@ -9,7 +10,7 @@ public class DialogueManager : MonoBehaviour
 
     public GameObject _transition;
     
-    public GameObject _background;
+    public Image _background;
 
     public GameObject _backText;
 
@@ -46,7 +47,12 @@ public class DialogueManager : MonoBehaviour
     private IEnumerator FirstDialogue(Dialogue dialogue)
     {
         _animator.SetTrigger("BoxIn");
-        yield return new WaitForSeconds(3f);
+        yield return new WaitForSeconds(1.8f);
+        if (_background != null)
+        {
+            _background.sprite = dialogue._spriteBackground;
+        }
+        yield return new WaitForSeconds(1.2f);
         _transition.SetActive(false);
         _dialogue = dialogue;
         _nameText.text = dialogue._name;
