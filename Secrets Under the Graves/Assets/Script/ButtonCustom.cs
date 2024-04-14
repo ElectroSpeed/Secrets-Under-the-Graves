@@ -4,7 +4,6 @@ using static UnityEngine.UI.Button;
 using UnityEngine.Serialization;
 using UnityEngine.UI;
 using TMPro;
-using UnityEditor.U2D;
 
 public class ButtonCustom : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, IPointerClickHandler
 {

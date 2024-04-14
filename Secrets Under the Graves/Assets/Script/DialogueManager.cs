@@ -6,6 +6,8 @@ using UnityEngine.UI;
 
 public class DialogueManager : MonoBehaviour
 {
+    public Image _introduction;
+
     public static DialogueManager Instance;
 
     public GameObject _transition;
@@ -112,5 +114,10 @@ public class DialogueManager : MonoBehaviour
             choice.SetActive(false);
             choice.transform.SetParent(_parentOutText);
         }
+    }
+
+    public void FirstButton()
+    {
+        _introduction.transform.position = new Vector3(10000, 10000,0);
     }
 }
